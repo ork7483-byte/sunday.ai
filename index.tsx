@@ -278,7 +278,7 @@ import React, { useState, useEffect, useRef } from "react";
                                   window.location.href = "/overview/index.html";
                                 } else if (item.id === "support") {
                                   console.log("Navigating to support");
-                                  window.location.href = "/support/index.html";
+                                  window.location.href = "/index.html";
                                 } else {
                                   console.log("Navigating internal:", item.id);
                                   onNavigate(item.id);
@@ -386,7 +386,7 @@ import React, { useState, useEffect, useRef } from "react";
                     <button onClick={() => { window.location.href = "/beta/index.html" }} className="text-left text-gray-500 hover:text-black transition-colors">
                       Beta Program
                     </button>
-                    <button onClick={() => onNavigate("support")} className="text-left text-gray-500 hover:text-black transition-colors">
+                    <button onClick={() => { window.location.href = '/index.html'; }} className="text-left text-gray-500 hover:text-black transition-colors">
                       Support
                     </button>
                   </div>
