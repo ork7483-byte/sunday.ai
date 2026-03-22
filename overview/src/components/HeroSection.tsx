@@ -24,8 +24,8 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-tight drop-shadow-lg">
-            새롭게 경험하는 세상.<br />
-            새롭게 바뀌는 일상.
+            A new way to experience the world.<br />
+            A new way to live your everyday.
           </h1>
         </motion.div>
       </div>

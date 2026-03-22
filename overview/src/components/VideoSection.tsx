@@ -14,8 +14,8 @@ export function VideoSection() {
         >
           <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-3">Innovation</p>
           <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight">
-            당신의 위젯과 앱.<br />
-            놓아둔 그 자리에 항상 그대로.
+            Your widgets and apps.<br />
+            Always exactly where you left them.
           </h2>
         </motion.div>
 
@@ -52,10 +52,10 @@ export function VideoSection() {
           className="mt-12 max-w-2xl"
         >
           <p className="text-lg text-gray-600 leading-relaxed">
-            방 한 켠에서 오늘의 주요 뉴스를 읽을 때에도 나의 실제 공간은 그대로<br className="hidden md:block" />
-            보이도록 할 수 있습니다. 사진을 감상할 때는 주변 조명을 어둡게 줄이면<br className="hidden md:block" />
-            마치 숲과 같은 분위기를 연출할 수 있죠. 그리고 몰입의 다이얼을 Digital Crown으로 돌려<br className="hidden md:block" />
-            공간 환경의 정도 - 현실과 Apple Vision Pro 경험을 조절할 수 있습니다.
+            Read today's top news from the corner of your room while your real space<br className="hidden md:block" />
+            remains entirely visible. When viewing photos, you can dim the surrounding glow<br className="hidden md:block" />
+            to create a forest-like atmosphere. And by turning the Digital Crown,<br className="hidden md:block" />
+            you can adjust your level of immersion—blending reality with your device experience.
           </p>
         </motion.div>
 

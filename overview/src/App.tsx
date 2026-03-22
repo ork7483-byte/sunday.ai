@@ -106,9 +106,9 @@ export default function App() {
       {/* Section 1: Hero */}
       <HeroSection />
 
-      {/* Section 2: Scroll Carousel (가로 스크롤) */}
+      {/* Section 2: Scroll Carousel (Horizontal Scroll) */}
       <ScrollCarousel 
-        title="일단 핵심부터." 
+        title="The Essentials." 
         items={carouselItems} 
       />
 
@@ -117,28 +117,28 @@ export default function App() {
 
       {/* Section 4 */}
       <ScrollCarousel 
-        title="지금까지 경험한 적 없는 웹 브라우징." 
+        title="Browsing like never before." 
         subtitle="Connectivity"
         items={section4Items} 
       />
 
       {/* Section 5 */}
       <ScrollCarousel 
-        title="상호 작용하는 새로운 방법들." 
+        title="New ways to interact." 
         subtitle="Productivity"
         items={section5Items} 
       />
 
       {/* Section 6 */}
       <ScrollCarousel 
-        title="볼거리는 더 많이. 보는 시각은 새롭게." 
+        title="See more. In a new light." 
         subtitle="Entertainment"
         items={section6Items} 
       />
 
       {/* Section 7 */}
       <ScrollCarousel 
-        title="어디로든 떠나 극한에 도전하다." 
+        title="Go anywhere, push the limits." 
         subtitle="Environment"
         items={section7Items} 
         dark={true}
@@ -147,7 +147,7 @@ export default function App() {
       {/* Section 8: Feature Grid */}
       <section className="bg-[#F2F1E8]">
         <div className="max-w-[1400px] mx-auto px-8 pt-24">
-          <h2 className="text-3xl font-semibold mb-4">그 밖의 다양한 기능들.</h2>
+          <h2 className="text-3xl font-semibold mb-4">Explore more features.</h2>
         </div>
         <FeatureGrid />
       </section>
