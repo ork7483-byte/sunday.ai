@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fdfcf8;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+/* Fallback gradient for images that fail to load */
+.fallback-gradient {
+  background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+}
+
+/* Hide Scrollbar for horizontal scrolling areas if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+}
+@supports (scrollbar-width: none) {
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+}
+
+/* --- SECTION 2 CARD HOVER: META TEXT SWAP --- */
+
+/* 1. Base Container */
+.cardMetaLine {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* transition: color 180ms ease;  <-- Removed color transition */
+}
+
+/* New: Target direct children (spans) for fade out */
+.cardMetaLine > * {
+  transition: opacity 180ms ease;
+}
+
+/* 2. Hover Text via Pseudo-element */
+.cardMetaLine::after {
+  content: attr(data-hover-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Alignment must match parent padding (pt-4 = 1rem) */
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+
+  /* Initial State */
+  opacity: 0;
+  transform: translateY(2px);
+  pointer-events: none;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+
+  /* Text Style */
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* 3. Interaction: Hover or Focus on Card Root */
+[data-card="post"]:hover .cardMetaLine > *,
+[data-card="post"]:focus-visible .cardMetaLine > * {
+  opacity: 0; /* Fade out the original content */
+}
+
+[data-card="post"]:hover .cardMetaLine::after,
+[data-card="post"]:focus-visible .cardMetaLine::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .cardMetaLine,
+  .cardMetaLine::after {
+    transition: none;
+    transform: none;
+  }
+}

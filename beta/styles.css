@@ -1,0 +1,56 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FDFBF7;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  @supports (scrollbar-width: none) {
+    scrollbar-width: none;
+  }
+}
+
+/* Card 2 Animation: Pop and Rotate (Intensified) */
+@keyframes card2Pop {
+  0% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.15) rotate(-5deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* Card 3 Animation: Blink and Tilt (Intensified) */
+@keyframes card3Blink {
+  0% { transform: scaleY(1) rotate(0deg); }
+  30% { transform: scaleY(1) rotate(10deg); }
+  50% { transform: scaleY(0.8) rotate(10deg); } /* Blink */
+  70% { transform: scaleY(1) rotate(10deg); }
+  100% { transform: scaleY(1) rotate(0deg); }
+}
+
+/* Card 4 Animation: Frame Bump */
+@keyframes frameBumpAnim {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.frameBump {
+  animation: frameBumpAnim 120ms ease-out;
+}
+
+/* Animation Triggers (Active on all devices) */
+.animate-card2,
+.card2-hover:hover .icon-inner {
+  animation: card2Pop 400ms ease-out both;
+}
+
+.animate-card3,
+.card3-hover:hover .icon-inner {
+  animation: card3Blink 700ms ease-in-out both;
+}

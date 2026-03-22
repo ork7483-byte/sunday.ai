@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers at Sunday</title>
+  <!-- 폰트 로드 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;400;500;600&family=Manrope:wght@400;600;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#F6F1E8',
+            surface: '#F3EDE3',
+            primary: '#141414',
+            secondary: '#4A4A4A',
+            accent: '#D4C5A9',
+            'memo-bg': '#F9F8F4',
+            'memo-dark': '#111111',
+            'memo-gray': '#F2F0EA',
+            'memo-accent': '#D4E76A',
+            'glass-white': 'rgba(255, 255, 255, 0.4)',
+            'glass-border': 'rgba(255, 255, 255, 0.2)',
+          },
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            display: ['DM Sans', 'sans-serif'],
+          },
+          borderRadius: {
+            'xl': '20px',
+          },
+          screens: {
+            'md': '900px',
+          }
+        },
+      },
+    }
+  </script>
+
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    body {
+      background-color: #F6F1E8;
+      color: #1A1A1A;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Hide scrollbar for cleaner horizontal scrolling on mobile */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    @supports (scrollbar-width: none) {
+      .no-scrollbar {
+        scrollbar-width: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="./index.tsx"></script>
+</body>
+
+</html>
