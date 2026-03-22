@@ -2924,21 +2924,51 @@ import React, { useState, useEffect, useRef } from "react";
                   The bottleneck in robotics is training data. Learning a single
                   complex task can take thousands of hours, and traditional data
                   gathering—like{" "}
-                  <a href="#" className="s5t-link">
-                    teleoperation
-                  </a>
+                  <span className="relative inline group cursor-pointer z-10">
+                    <span className="s5t-link">
+                      teleoperation
+                    </span>
+                    <span className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-[320px] p-4 bg-[#111] text-white text-sm font-sans text-left rounded-2xl opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out pointer-events-none shadow-xl" style={{zIndex: 50}}>
+                      <strong className="block mb-1.5 text-base font-semibold tracking-wide text-white">
+                        Teleoperation
+                      </strong>
+                      <span className="text-gray-200 leading-relaxed font-normal block">
+                        Teleoperation is the control of a robot by a human operator at a distance. The human sees what the robot sees and directly sends commands to move the robot's arms, wheels, hands, etc.
+                      </span>
+                    </span>
+                  </span>
                   —is slow, costly, and intrusive. Sunday's goal is different:
                   we are building true autonomy in a scalable way.
                 </p>
                 <p className="s5t-paragraph">
                   Enter the{" "}
-                  <a href="#" className="s5t-link">
-                    Skill Capture Glove
-                  </a>
+                  <span className="relative inline group cursor-pointer z-10">
+                    <span className="s5t-link">
+                      Skill Capture Glove
+                    </span>
+                    <span className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-[320px] p-4 bg-[#111] text-white text-sm font-sans text-left rounded-2xl opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out pointer-events-none shadow-xl" style={{zIndex: 50}}>
+                      <strong className="block mb-1.5 text-base font-semibold tracking-wide text-white">
+                        Skill Capture Glove
+                      </strong>
+                      <span className="text-gray-200 leading-relaxed font-normal block">
+                        Our patented Skill Capture Glove is a one-to-one representation of Memo's hand and enables anyone to teach Memo nearly any skill. What you can do wearing the Skill Capture Glove, Memo can learn.
+                      </span>
+                    </span>
+                  </span>
                   . This technology allows our team of{" "}
-                  <a href="#" className="s5t-link">
-                    Memory Developers
-                  </a>{" "}
+                  <span className="relative inline group cursor-pointer z-10">
+                    <span className="s5t-link">
+                      Memory Developers
+                    </span>
+                    <span className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-[320px] p-4 bg-[#111] text-white text-sm font-sans text-left rounded-2xl opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out pointer-events-none shadow-xl" style={{zIndex: 50}}>
+                      <strong className="block mb-1.5 text-base font-semibold tracking-wide text-white">
+                        Memory Developer
+                      </strong>
+                      <span className="text-gray-200 leading-relaxed font-normal block">
+                        Memory Developers (MDs) are data collectors who use our Skill Capture Gloves to train our models on a wide diversity of tasks. Our MDs represent households across the US and collect from their lived-in homes.
+                      </span>
+                    </span>
+                  </span>{" "}
                   to generate data at scale and train Memo rapidly, long before
                   it reaches your living room. We co-designed Memo's hand to be
                   a perfect mirror of the glove's shape and sensors. As a
