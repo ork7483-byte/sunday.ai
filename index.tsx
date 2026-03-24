@@ -2928,7 +2928,7 @@ import React, { useState, useEffect, useRef } from "react";
                     <span className="s5t-link">
                       teleoperation
                     </span>
-                    <span className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-[320px] p-4 bg-[#111] text-white text-sm font-sans text-left rounded-2xl opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out pointer-events-none shadow-xl" style={{zIndex: 50}}>
+                    <span className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-[min(320px,94vw)] p-4 bg-[#111] text-white text-sm font-sans text-left rounded-2xl opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out pointer-events-none shadow-xl" style={{zIndex: 50}}>
                       <strong className="block mb-1.5 text-base font-semibold tracking-wide text-white">
                         Teleoperation
                       </strong>
@@ -2960,7 +2960,7 @@ import React, { useState, useEffect, useRef } from "react";
                     <span className="s5t-link">
                       Memory Developers
                     </span>
-                    <span className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-[320px] p-4 bg-[#111] text-white text-sm font-sans text-left rounded-2xl opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out pointer-events-none shadow-xl" style={{zIndex: 50}}>
+                    <span className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-[min(320px,94vw)] p-4 bg-[#111] text-white text-sm font-sans text-left rounded-2xl opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out pointer-events-none shadow-xl" style={{zIndex: 50}}>
                       <strong className="block mb-1.5 text-base font-semibold tracking-wide text-white">
                         Memory Developer
                       </strong>

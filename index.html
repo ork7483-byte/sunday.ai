@@ -49,14 +49,14 @@
     
 
     <style>
-      html {
-        scroll-behavior: smooth;
-      }
-
+      html,
       body {
         background-color: #f9f8f4;
         color: #111111;
         overflow-x: hidden;
+        position: relative;
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
       }
 
       .spline-wrapper {
@@ -1596,8 +1596,8 @@
         }
 
         .s8-circle-labels {
-          width: 360px;
-          height: 360px;
+          width: min(94vw, 360px);
+          height: min(94vw, 360px);
         }
 
         .s8-circle-center {
